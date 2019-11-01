@@ -1,0 +1,205 @@
+body
+{
+    background-color:#f5f5fd; 
+}
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+ul {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
+/* Start NavBar  */
+
+.navigation {
+    width: 100%;
+    border-radius: 1px;
+    background-color: #CCC;
+    min-height: 46px;
+    margin-bottom: 0;
+    background-color: black;
+}
+.navigation > li {
+    display: inline;
+    color: #FFF;
+}
+.navigation > li > a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navigation li a {
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.left{
+    font-size: 25px;
+    padding: 6px;
+    font-weight: bold;
+}
+.navigation .right {
+    float: right;
+    padding: 11px 21px;
+    padding-right: 45;
+    margin-right: 45px;
+}
+.navigation .right li {
+    display: inline;
+    padding-left: 20px;
+}
+.navigation .center {
+    text-align: center;
+    position: relative;
+    left: 510px;
+    top: 8px;
+}
+.navigation .center img {
+    width: 30px;
+    height: 30px;
+}
+/* 3lshan a3ml al drop down meny absolute position fa tegy fo2 3l 2men*/
+
+.navigation .menu {
+    position: relative
+}
+/*  Drop down menu*/
+
+.navigation .menu .submenu {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 118px;
+    background-color: #FFF;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+    display: none;
+}
+.navigation .menu .submenu li {
+    padding: 10px;
+    display: block;
+}
+.navigation .menu .submenu li a {
+    color: #777;
+    text-decoration: none;
+}
+.navigation .menu .submenu li a:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #F00
+}
+/* ARROW */
+
+.navigation .menu .submenu:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #FFF;
+    content: "";
+    height: 0;
+    left: 32px;
+    position: absolute;
+    top: -6px;
+    width: 0;
+}
+.navigation .menu:hover .submenu {
+    display: block;
+}
+/*  End Navbar */
+ 
+.product {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    padding: 14px;
+    width: 26%;
+    height: 400px;
+    box-shadow: 20px 20px 15px #b1b1b1;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.product:hover{
+     box-shadow: 7px 7px 3px #b1b1b1; 
+
+}
+.product button {
+    background-color: white;
+    color: coral;
+    border: solid 1px;
+    padding: 3px;
+}
+.product p {
+    color: #b1b1b1;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+button{
+    margin-bottom: 10px;
+}
+hr {
+    color: #e0e2e2;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+img.shop {
+    float: right;
+    margin-left: 60px;
+}
+ul {
+    list-style: none;
+}
+/*start footer*/
+
+.footer {
+    padding-top: 30px;
+    height: 300px;
+    background-color: black;
+}
+.footer h2 {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+.footer .f div {
+    display: inline-block;
+}
+.footer li {
+    margin-bottom: 20px;
+}
+.footer .f li a {
+    color: #FFF;
+}
+.footer .FL {
+    padding-bottom: 20px;
+    height: 156px;
+    width: 445px;
+}
+.footer .FL li {
+    margin-left: 360px;
+}
+.footer .FR {
+    float: right;
+    width: 425px;
+    height: 156px;
+}
+.footer .FR li {
+    margin-right: 300px;
+}
+.footer .FC {
+    width: 425px;
+}
+.footer .FC li {
+    margin-left: 206px;
+    margin-bottom: 0px;
+}
+.FC ul li img {
+    height: 30px;
+    width: 30px;
+}
+/*End footer*/

@@ -1,0 +1,347 @@
+
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+/* Start NavBar  */
+
+ul {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
+/* Start NavBar  */
+
+.navigation {
+    width: 100%;
+    border-radius: 1px;
+    background-color: black;
+    min-height: 46px;
+    margin-bottom: 0;
+}
+.navigation > li {
+    display: inline;
+    color: #FFF;
+}
+.navigation > li > a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navigation li a {
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.navigation .Left {
+    font-size: 30px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.navigation .right {
+    float: right;
+    padding: 11px 21px;
+    padding-right: 45;
+    margin-right: 45px;
+}
+.navigation .right li {
+    display: inline;
+    padding-left: 20px;
+}
+.navigation .center {
+    position: relative;
+    left: 464px;
+    top: 8px;
+}
+.navigation .center img {
+    width: 30px;
+    height: 30px;
+}
+/* 3lshan a3ml al drop down meny absolute position fa tegy fo2 3l 2men*/
+
+.navigation .menu {
+    position: relative
+}
+/*  Drop down menu*/
+
+.navigation .menu .submenu {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 140px;
+    background-color: #FFF;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+.navigation .menu .submenu li {
+    padding: 10px;
+    display: block;
+}
+.navigation .menu .submenu li a {
+    color: #777;
+    text-decoration: none;
+}
+.navigation .menu .submenu li a:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color:red;
+}
+/* ARROW */
+
+.navigation .menu .submenu:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #FFF;
+   content: "";
+    height: 0;
+    position: absolute;
+    left: 32px;
+    top: -6px;
+    width: 0;
+}
+.navigation .menu:hover .submenu {
+    display: block;
+}
+/*  End Navbar */
+
+/*  Start Slider */
+@keyframes slider {
+
+0% {
+	left: 0;
+}
+
+15% {
+	left: 0;
+}
+
+20% {
+	left: -100%;
+}
+
+40% {
+    left: -100%;
+
+}
+
+45% {
+		left: -200%;
+
+}
+
+65% {
+	left: -200%;
+}
+
+70% {
+	left: -300%;
+}
+
+85% {
+	left: -300%;
+}
+
+95% {
+	left: -400%;
+
+}
+
+}
+
+.slider {
+	overflow: hidden;
+    width: 100%; /*Width bta3o 500 px*/
+    height: 660px;
+}
+.slider figure div {
+    float: left; /* 3lshan msh kol al swr tb2a fo2 b3d */
+    width: 20%; /* de 3lshan 20*5=100  wa al 5 dol 3dd al div*/
+}
+.slider figure img {
+	width: 100%;
+}
+
+.slider p
+{
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    width: 20%;/*3lshan yb2a m3a kol sora 20% */
+    padding-top:30px;
+    color: black;
+}
+.slider figure {/*Figure dah aly shayl kol image wa m5leh dynamic*/
+	position: relative; /*3lshan yt7rk br7to wa y5leh dynamic*/
+	width: 500%;
+	margin: 0;
+	animation: 20s slider infinite; 
+}
+/*End Slider*/
+/*End Slider*/
+/*Start BG and Cover*/
+
+.BG {
+    background-image: url(HomePic/bg.jpeg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+.BGC {
+    background: rgba(0, 0, 0, 0.7);
+}
+/*End BG And Cover*/
+
+/* 2 Lines */
+
+.newline1 {
+    background: #CCC;
+    position: relative;
+    height: 1px;
+    top: 25px;
+}
+.newline2 {
+    background: #CCC;
+    position: relative;
+    height: 1px;
+    top: 5px;
+}
+/*END*/
+/*start login*/
+
+.login {
+    height: 300px;
+    padding-top: 60px;
+}
+.login h1 {
+    text-align: center;
+    color: #CCC;
+}
+.login input {
+    margin: 20px auto;
+    height: 37px;
+    padding-left: 5px;
+    width: 400px;
+    display: block;
+    border: 0px transparent;
+    border-radius: 0 0 0 20px;
+    color: #CCC;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.login .add {
+    width: 30px;
+    height: 30px;
+   position: relative;
+    top: 9px;
+}
+.login a {
+    position: relative;
+    left: 596px;
+    color: #CCC;
+    top: -19px;
+}
+.login button
+{
+    margin: 20px auto;
+    height: 37px;
+    padding-left: 5px;
+    width: 400px;
+    display: block;
+    border: 0px transparent;
+    border-radius: 0 0 0 20px;
+    color: #CCC;
+    background-color: black;
+    margin-bottom: 30px;
+}
+.login p{text-align: center;color: #CCC;}
+/*End login */
+
+/*Start Abouts US*/
+
+.About-US {
+    height: 400px;
+    margin-bottom: 40px;
+}
+.About-US img {
+    padding-left: 10px;
+    float: left;
+    padding-right: 10px;
+}
+.About-US h1 {
+    color: #CCC;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+.About-US p {
+    color: #CCC;
+    font-size: 18px;
+}
+/*End About US*/
+
+/*Start footer*/
+
+.footer {
+    padding-top: 30px;
+    height: 300px;
+}
+.footer h2 {
+    text-align: center;
+    color: #CCC;
+    margin-bottom: 50px;
+}
+.footer .f div {
+    display: inline-block;
+}
+.footer li {
+    margin-bottom: 20px;
+}
+.footer .f li a {
+    color: #CCC;
+}
+.footer .FL {
+    padding-bottom: 20px;
+    height: 156px;
+    width: 445px;
+}
+.footer .FL li {
+    margin-left: 360px;
+}
+.footer .FR {
+    float: right;
+    width: 425px;
+    height: 156px;
+}
+.footer .FR li {
+    margin-right: 300px;
+}
+.footer .FC {
+    width: 425px;
+}
+.footer .FC li {
+    margin-left: 206px;
+    margin-bottom: 0px;
+}
+.FC ul li img {
+    height: 30px;
+    width: 30px;
+}
+/*End footer*/
+
+.copyright {
+    width: 100%;
+    color: #AAA;
+    padding: 15px 0;
+    font-size: 18px;
+    text-align: center;
+}
+.copyright span {
+    color: red;
+}
